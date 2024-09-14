@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className='flex w-full mx-auto max-w-6xl border'>
+    <div className='flex w-full mx-auto max-w-7xl'>
       <main className='text-red-500 w-full bg-blue-300'>hello world</main>
       <Aside />
     </div>

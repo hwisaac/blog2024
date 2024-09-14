@@ -4,7 +4,7 @@ type Props = {};
 
 export default function RecentPost({}: Props) {
   return (
-    <section className=' rounded-xl shadow-xl border flex flex-col items-center m-4 py-8'>
+    <section className=' rounded-xl shadow-lg flex flex-col items-center m-4 py-8  bg-white'>
       <p className='font-semibold mb-6 text-lg'>RECENT POST</p>
       <ul className='flex flex-col gap-8 '>
         <PostItem />

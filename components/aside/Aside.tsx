@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Aside({}: Props) {
   return (
-    <aside className='border w-full max-w-md'>
+    <aside className='w-full max-w-md flex flex-col gap-4'>
       <PopularPost />
       <RecentPost />
     </aside>
