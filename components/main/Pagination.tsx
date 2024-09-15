@@ -37,6 +37,7 @@ export default async function Pagination({
     for (let i = startPage; i <= endPage; i++) {
       pageNumbers.push(
         <Link
+          aria-label={`Go to page ${i}`}
           href={`?page=${i}`}
           key={i}
           className={`size-14 flex items-center justify-center rounded-full font-semibold text-sm ${
@@ -52,6 +53,8 @@ export default async function Pagination({
   return (
     <div className='flex items-center justify-center gap-2 mt-4'>
       <Link
+        rel='prev'
+        aria-label='Go to previous page'
         href={`?page=${getPreviousPage()}`}
         className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 ${
           startPage === 1 && 'hidden'
@@ -60,6 +63,8 @@ export default async function Pagination({
       </Link>
       {renderPageNumbers()}
       <Link
+        rel='next'
+        aria-label='Go to next page'
         href={`?page=${getNextPage()}`}
         className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 ${
           endPage === totalPages && 'hidden'

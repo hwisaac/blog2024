@@ -19,7 +19,7 @@ export default function PopularPost({}: Props) {
 function PostItem() {
   return (
     <li className='flex gap-4 '>
-      <div className='size-16 bg-cGray1 rounded-lg shrink-0'>img</div>
+      <div className='size-16 bg-cGray1 rounded-lg shrink-0'></div>
       <div className='h-16 w-full '>
         <p className='text-slate-400 font-semibold text-sm truncate'>
           DESIGN PROCESS

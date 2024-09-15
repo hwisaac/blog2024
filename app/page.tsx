@@ -7,7 +7,7 @@ export default function Home({ searchParams: { page } }: any) {
   const _onPageChange = (page: number) => {};
   return (
     <div className='flex w-full mx-auto max-w-7xl'>
-      <main className='text-red-500 w-full bg-white flex flex-col rounded-lg shadow-lg'>
+      <main className='w-full bg-white flex flex-col rounded-lg shadow-lg overflow-hidden pt-6 pb-12 gap-10'>
         <Posts />
 
         <Pagination

@@ -14,7 +14,7 @@ export default function AsideTags({}: Props) {
         <TagItem text='Money' />
         <TagItem text='Python' />
       </ul>
-      <p className='text-sm text-cOrange px-1 mt-4 hover:underline cursor-pointer'>
+      <p className='text-sm text-cRed px-1 mt-4 hover:underline cursor-pointer'>
         See more tags
       </p>
     </section>
