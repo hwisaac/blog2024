@@ -9,7 +9,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className=' w-full max-w-7xl mx-auto flex flex-wrap justify-between py-8'>
+    <header className=' w-full max-w-7xl mx-auto flex flex-wrap justify-between items-end py-8'>
       {/* <Image src={logo} alt='logo' width={30} height={30} /> */}
       <p className='font-black text-4xl'>B</p>
       <nav className='flex gap-16'>

@@ -25,6 +25,7 @@ const config: Config = {
         cGreen: '#00dc90',
         cBg: '#f9f9fb',
         cGray: '#e0e0e0',
+        cGray1: '#ededed',
         cDarkGray: '#909090',
         tBlack: '#000000',
         tPassive: '#9b9b9b',
