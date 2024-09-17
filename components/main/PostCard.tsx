@@ -7,8 +7,8 @@ export default function PostCard({}: Props) {
   return (
     <Link
       href={`/`}
-      className=' w-[370px] rounded-lg hover:shadow-xl transition-all pb-4'>
-      <div className='bg-cGray1 w-[370px] h-[200px] rounded-lg'></div>
+      className=' w-[380px] rounded-lg hover:shadow-xl transition-all p-4 border border-transparent hover:border-gray-200 '>
+      <div className='bg-cGray1 w-full h-[200px] rounded-lg'></div>
       <ul className='flex gap-2 w-full flex-wrap text-xs mt-2 mb-4'>
         <li className='text-cRed'>#python</li>
         <li>#javascript</li>

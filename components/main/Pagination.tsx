@@ -40,7 +40,7 @@ export default async function Pagination({
           aria-label={`Go to page ${i}`}
           href={`?page=${i}`}
           key={i}
-          className={`size-14 flex items-center justify-center rounded-full font-semibold text-sm ${
+          className={`size-14 flex items-center justify-center rounded-full font-semibold text-sm cursor-pointer ${
             i === currentPage ? 'bg-cRed text-white' : 'bg-cGray1 text-black'
           }`}>
           {`${i}`.padStart(2, '0')}
@@ -56,7 +56,7 @@ export default async function Pagination({
         rel='prev'
         aria-label='Go to previous page'
         href={`?page=${getPreviousPage()}`}
-        className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 ${
+        className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 cursor-pointer ${
           startPage === 1 && 'hidden'
         }`}>
         <GoChevronLeft />
@@ -66,7 +66,7 @@ export default async function Pagination({
         rel='next'
         aria-label='Go to next page'
         href={`?page=${getNextPage()}`}
-        className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 ${
+        className={`size-14 flex items-center justify-center rounded-full bg-[#efefef] text-black disabled:opacity-50 cursor-pointer ${
           endPage === totalPages && 'hidden'
         } `}>
         <GoChevronRight />

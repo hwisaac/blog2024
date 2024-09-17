@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Posts({}: Props) {
   return (
-    <div className='grid grid-cols-2 gap-10 px-6'>
+    <div className='grid grid-cols-2 gap-y-8 gap-x-4 px-6'>
       <PostCard />
       <PostCard />
       <PostCard />
