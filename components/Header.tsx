@@ -5,12 +5,9 @@ import { FaSearch } from 'react-icons/fa';
 import Image from 'next/image';
 import logo from '@/public/logo.png';
 
-type Props = {
-  param: any;
-};
+type Props = {};
 
-export default function Header({ param }: Props) {
-  console.log(param);
+export default function Header() {
   return (
     <header className=' w-full max-w-7xl mx-auto flex flex-wrap justify-between items-end py-8'>
       {/* <Image src={logo} alt='logo' width={30} height={30} /> */}
