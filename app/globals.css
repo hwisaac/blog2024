@@ -4,9 +4,46 @@
 
 .card-summary {
   height: 40px;
-  text-wrap: balance;
   display: -webkit-box;   
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2; /* 제한할 텍스트의 줄 수 */
+}
+
+.detail-post h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.detail-post h2 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.detail-post h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.detail-post h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.detail-post h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.detail-post h6 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.detail-post p {
+  font-size: 20px;
+}
+
+.detail-post pre {
+
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: #eee;
+  margin: 10px;
 }

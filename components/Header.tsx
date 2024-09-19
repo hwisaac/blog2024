@@ -4,6 +4,7 @@ import CircleButton from './common/CircleButton';
 import { FaSearch } from 'react-icons/fa';
 import Image from 'next/image';
 import logo from '@/public/logo.png';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -11,7 +12,9 @@ export default function Header() {
   return (
     <header className=' w-full max-w-7xl mx-auto flex flex-wrap justify-between items-end py-8'>
       {/* <Image src={logo} alt='logo' width={30} height={30} /> */}
-      <p className='font-black text-4xl'>B</p>
+      <Link href={'/'} className='font-black text-4xl cursor-pointer'>
+        B
+      </Link>
       <nav className='flex gap-16'>
         <ul className='flex items-center gap-16'>
           <MenuItem text='Popular' />

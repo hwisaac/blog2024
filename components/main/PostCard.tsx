@@ -16,7 +16,7 @@ export default function PostCard({ post }: Props) {
         ))}
       </ul>
       <p className='font-semibold text-lg mb-4 truncate'>{post.title}</p>
-      <p className='card-summary text-balance text-sm text-gray-600'>
+      <p className='card-summary text-sm text-gray-600 whitespace-normal '>
         {post.summary}
       </p>
     </Link>
