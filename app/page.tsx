@@ -105,7 +105,7 @@ export default async function Home({ searchParams: { page } }: any) {
   const _onPageChange = (page: number) => {};
   console.log(API_URL);
   const result: PostsResponse = await fetch(
-    `${API_URL}/posts/?page=${page ?? 1}`,
+    `${API_URL}/api/posts/?page=${page ?? 1}`,
     {
       cache: 'no-cache',
     }

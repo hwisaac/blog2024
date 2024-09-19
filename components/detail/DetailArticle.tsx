@@ -1,3 +1,4 @@
+import { RelatedPostType } from '@/app/posts/[slug]/page';
 import React from 'react';
 
 type Props = {

@@ -16,7 +16,9 @@ export async function POST(
     }
 
     // Django API로 조회수 증가 요청
-    const result = await axios.post(`${API_URL}/posts/increase-views/${slug}/`);
+    const result = await axios.post(
+      `${API_URL}/api/posts/increase-views/${slug}/`
+    );
 
     return new Response(
       JSON.stringify({
