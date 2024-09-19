@@ -12,7 +12,9 @@ export default function PostCard({ post }: Props) {
       <div className='bg-cGray1 w-full h-[200px] rounded-lg'></div>
       <ul className='flex gap-2 w-full flex-wrap text-xs mt-2 mb-4'>
         {post.tags.map((tag) => (
-          <li className='text-gray-400'>#{tag}</li>
+          <li key={`post-card-${tag}`} className='text-gray-400'>
+            #{tag}
+          </li>
         ))}
       </ul>
       <p className='font-semibold text-lg mb-4 truncate'>{post.title}</p>

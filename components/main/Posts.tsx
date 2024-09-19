@@ -11,7 +11,7 @@ export default function Posts({ posts }: Props) {
   return (
     <div className='grid grid-cols-2 gap-y-8 gap-x-4 px-6'>
       {posts.map((post) => (
-        <PostCard post={post} />
+        <PostCard key={post.slug} post={post} />
       ))}
     </div>
   );

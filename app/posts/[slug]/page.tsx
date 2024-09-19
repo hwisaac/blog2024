@@ -38,6 +38,7 @@ export default async function page({ params }: Props) {
   const detail: PostDetail = await fetch(`${API_URL}/posts/${params.slug}/`, {
     cache: 'no-cache',
   }).then((res) => res.json());
+  console.log('--------------', detail);
   return (
     <>
       <IncreaseViewCount slug={params.slug} />
